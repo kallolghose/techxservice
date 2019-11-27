@@ -8,7 +8,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "userdetails")
+@Entity(name = "otp")
 @Getter
 @Setter
 public class Otp {
