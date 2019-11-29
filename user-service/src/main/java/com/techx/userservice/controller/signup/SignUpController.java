@@ -1,11 +1,14 @@
 package com.techx.userservice.controller.signup;
 
+import com.netflix.ribbon.proxy.annotation.Http;
 import com.techx.dbhandler.models.userservice.Otp;
 import com.techx.dbhandler.models.userservice.UserDetails;
 import com.techx.dbhandler.repository.userservice.OTPRepository;
 import com.techx.dbhandler.repository.userservice.UserDetailsRepository;
+import com.techx.pojo.request.user.otp.OtpRequest;
 import com.techx.pojo.request.user.signup.SignUpRequest;
 import com.techx.pojo.response.APIResponse;
+import com.techx.pojo.response.user.otp.OtpResponse;
 import com.techx.pojo.response.user.signup.SignUpResponse;
 import com.techx.utilities.AppUtilities;
 import com.techx.utilities.constants.Constants;
@@ -69,14 +72,11 @@ public class SignUpController {
                 userDetails.setSalt(salt);
                 userDetailsRepository.save(userDetails);
 
-                int otpGenerated = generateOTP();
-                Otp otp = new Otp();
-                otp.setCreationDate(new Date());
-                otp.setIsdCode(signUpRequest.getIsdCode());
-                otp.setPhoneNumber("" + signUpRequest.getPhoneNo());
-                otp.setOtp(otpGenerated);
-                otp.setUserid(userID);
-                otpRepository.save(otp);
+                OtpRequest otpRequest = new OtpRequest();
+                otpRequest.setEmailId(signUpRequest.getEmailId());
+                otpRequest.setIsdCode(signUpRequest.getIsdCode());
+                otpRequest.setPhoneNo(signUpRequest.getPhoneNo());
+                otpGeneration(otpRequest);
 
                 SignUpResponse signUpResponse = new SignUpResponse();
                 signUpResponse.setEmailId(signUpRequest.getEmailId());
@@ -94,6 +94,53 @@ public class SignUpController {
                 }},HttpStatus.CONFLICT);
             }
         }
+    }
+
+    @PostMapping("/generateOtp")
+    public ResponseEntity<APIResponse> otpGeneration(@Valid @RequestBody(required = false)OtpRequest otpRequest){
+
+        UserDetails userDetails = userDetailsRepository.findByPhoneNumber("" + otpRequest.getPhoneNo());
+        if(Objects.nonNull(userDetails)) {
+            int otpGenerated = generateOTP();
+            Otp otp = new Otp();
+            otp.setCreationDate(new Date());
+            otp.setIsdCode(otpRequest.getIsdCode());
+            otp.setPhoneNumber("" + otpRequest.getPhoneNo());
+            otp.setOtp(otpGenerated);
+            otp.setUserid(userDetails.getUserId());
+            otpRepository.save(otp);
+
+            OtpResponse otpResponse = new OtpResponse();
+            otpResponse.setEmailId(userDetails.getEmailId());
+            otpResponse.setIsdCode(otpRequest.getIsdCode());
+            otpResponse.setPhoneNo(otpRequest.getPhoneNo());
+            otpResponse.setUserId(userDetails.getUserId());
+            otpResponse.setMessage("OTP Generated");
+
+            return ResponseUtility.createSuccessfulResponse(Messages.SUCCESS.getMessage(), otpResponse, HttpStatus.OK);
+        }
+        else {
+            return ResponseUtility.createFailureResponse(Messages.USER_DOES_NOT_EXISTS.getMessage(), new ArrayList<String>(){{
+                add(otpRequest.getPhoneNo() + " is not register with us. Please register");
+            }}, HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PostMapping("/validateotp")
+    public ResponseEntity<APIResponse> validateOTP(@Valid @RequestBody(required = false) OtpRequest otpRequest){
+
+        Otp otp = otpRepository.findByPhoneNumber("" + otpRequest.getPhoneNo());
+        if(Objects.nonNull(otp)){
+            if(otp.getOtp().equals(otpRequest.getOtp()+"")){
+                return ResponseUtility.createSuccessfulResponse(Messages.SUCCESS.getMessage(), null, HttpStatus.OK);
+            }
+        }
+        else{
+            return ResponseUtility.createFailureResponse("Invalid OTP", new ArrayList<String>(){{
+                add("Invalid OTP");
+            }}, HttpStatus.OK);
+        }
+        return null;
     }
 
 

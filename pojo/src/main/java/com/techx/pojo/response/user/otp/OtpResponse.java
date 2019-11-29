@@ -10,5 +10,7 @@ public class OtpResponse {
     private String emailId;
     private Long phoneNo;
     private String isdCode;
+    private String message;
+    private String token;
 
 }
