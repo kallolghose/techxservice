@@ -8,9 +8,10 @@ public class LoginResponse {
 
     private String firstName;
     private String lastName;
-    private String username;
+    private String userid;
     private String emailId;
     private String isdCode;
     private Long phoneNo;
+    private String token;
 
 }

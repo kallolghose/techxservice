@@ -28,5 +28,8 @@ public class Otp {
     private String phoneNumber;
 
     @Column(name = "otp")
-    private String otp;
+    private Integer otp;
+
+    @Column(name = "userid")
+    private String userid;
 }

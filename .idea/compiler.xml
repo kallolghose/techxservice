@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="utilities" />
         <module name="zuul" />
         <module name="eureka-server" />
         <module name="inventory-service" />
@@ -26,6 +27,7 @@
       <module name="inventory-service" options="-parameters" />
       <module name="pojo" options="-parameters" />
       <module name="user-service" options="-parameters" />
+      <module name="utilities" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

@@ -10,4 +10,6 @@ public class SignUpResponse {
     private String emailId;
     private Long phoneNo;
     private String isdCode;
+    private String status;
+    private String active;
 }

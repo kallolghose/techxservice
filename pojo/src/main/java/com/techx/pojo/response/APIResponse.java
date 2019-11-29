@@ -6,11 +6,11 @@ import lombok.Setter;
 import java.util.List;
 
 @Getter @Setter
-public class GenericResponse<T> {
+public class APIResponse<T> {
 
     private Boolean status;
     private String message;
-    private List<String> error;
+    private List error;
     private T data;
 
 }

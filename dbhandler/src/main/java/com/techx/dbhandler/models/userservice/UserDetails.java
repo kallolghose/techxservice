@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -29,14 +29,11 @@ public class UserDetails {
     @Column(name = "emailid")
     private String emailId;
 
-    @Column(name = "age")
-    private Integer age;
-
-    @Column(name = "gender")
-    private String gender;
-
     @Column(name = "password")
     private String password;
+
+    @Column(name = "salt")
+    private byte[] salt;
 
     @Column(name = "active")
     private String active;

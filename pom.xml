@@ -23,6 +23,7 @@
         <module>inventory-service</module>
         <module>pojo</module>
         <module>dbhandler</module>
+        <module>utilities</module>
     </modules>
 
 
