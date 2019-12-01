@@ -2,7 +2,8 @@ package com.techx.utilities.constants;
 
 public enum Constants {
 
-    OTP_VALIDATION("Send for OTP Validation");
+    OTP_VALIDATION_REQUIRED("OTP Validation Required."),
+    OTP_VALIDATION_COMPLETED("Phone number verified.");
 
     private String status;
     public String getStatus(){

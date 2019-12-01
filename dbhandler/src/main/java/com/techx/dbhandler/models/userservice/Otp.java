@@ -14,9 +14,9 @@ import java.util.Date;
 public class Otp {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "creationdate")
     private Date creationDate;
@@ -28,8 +28,12 @@ public class Otp {
     private String phoneNumber;
 
     @Column(name = "otp")
-    private Integer otp;
+    private Long otp;
 
     @Column(name = "userid")
     private String userid;
+
+    @Column(name = "expired")
+    private String expired;
+
 }

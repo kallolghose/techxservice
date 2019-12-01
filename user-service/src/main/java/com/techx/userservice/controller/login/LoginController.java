@@ -7,6 +7,7 @@ import com.techx.pojo.response.APIResponse;
 import com.techx.pojo.response.user.login.LoginResponse;
 import com.techx.utilities.AppUtilities;
 import com.techx.utilities.ResponseUtility;
+import com.techx.utilities.constants.Constants;
 import com.techx.utilities.constants.Messages;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -59,8 +60,10 @@ public class LoginController {
                 }
             }
             else{
-                return ResponseUtility.createFailureResponse(Messages.USER_DOES_NOT_EXISTS.getMessage(), new ArrayList<String>(){{
+                String status = userDetails.getStatus();
+                return ResponseUtility.createFailureResponse(Messages.ADDITION_VERIFICATION.getMessage(), new ArrayList<String>(){{
                     add("User is not active");
+                    add(Constants.valueOf(status).getStatus());
                 }}, HttpStatus.OK);
             }
         }
@@ -69,5 +72,10 @@ public class LoginController {
                 add(loginRequest.getPhoneNo() + " is not registered with us. Please register.");
             }}, HttpStatus.NOT_FOUND);
         }
+    }
+
+    @GetMapping("/checkAuthorization")
+    public String authorizationCheck(){
+        return "Some Text";
     }
 }

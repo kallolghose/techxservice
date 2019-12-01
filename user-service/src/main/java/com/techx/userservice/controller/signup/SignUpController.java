@@ -62,7 +62,7 @@ public class SignUpController {
                 userDetails.setIsdCode(signUpRequest.getIsdCode());
                 userDetails.setActive("N");
                 userDetails.setUserId(userID);
-                userDetails.setStatus(Constants.OTP_VALIDATION.name());
+                userDetails.setStatus(Constants.OTP_VALIDATION_REQUIRED.name());
 
                 //Get Salt and encrypted password
                 byte[] salt = AppUtilities.getSalt();
@@ -82,7 +82,7 @@ public class SignUpController {
                 signUpResponse.setEmailId(signUpRequest.getEmailId());
                 signUpResponse.setPhoneNo(signUpRequest.getPhoneNo());
                 signUpResponse.setIsdCode(signUpRequest.getIsdCode());
-                signUpResponse.setStatus(Constants.OTP_VALIDATION.name());
+                signUpResponse.setStatus(Constants.OTP_VALIDATION_REQUIRED.name());
                 signUpResponse.setActive("N");
                 signUpResponse.setUserId(userID);
 
@@ -101,13 +101,14 @@ public class SignUpController {
 
         UserDetails userDetails = userDetailsRepository.findByPhoneNumber("" + otpRequest.getPhoneNo());
         if(Objects.nonNull(userDetails)) {
-            int otpGenerated = generateOTP();
+            long otpGenerated = generateOTP();
             Otp otp = new Otp();
             otp.setCreationDate(new Date());
             otp.setIsdCode(otpRequest.getIsdCode());
             otp.setPhoneNumber("" + otpRequest.getPhoneNo());
             otp.setOtp(otpGenerated);
             otp.setUserid(userDetails.getUserId());
+            otp.setExpired("N");
             otpRepository.save(otp);
 
             OtpResponse otpResponse = new OtpResponse();
@@ -129,18 +130,33 @@ public class SignUpController {
     @PostMapping("/validateotp")
     public ResponseEntity<APIResponse> validateOTP(@Valid @RequestBody(required = false) OtpRequest otpRequest){
 
-        Otp otp = otpRepository.findByPhoneNumber("" + otpRequest.getPhoneNo());
-        if(Objects.nonNull(otp)){
-            if(otp.getOtp().equals(otpRequest.getOtp()+"")){
+        List<Otp> otps = otpRepository.findByPhoneNumberAndExpired("" + otpRequest.getPhoneNo(), "N");
+        logger.info("OTP SIZE : " + otps.size() + "");
+        if(otps.size()>0){
+            logger.info("OTP in table : " + otps.get(0).getOtp() + " Request : " + otpRequest.getOtp());
+            if(otps.get(0).getOtp().longValue() == otpRequest.getOtp().longValue()){
+                int updateStatus = otpRepository.updateOTPSetExpiredForId("Y", otps.get(0).getId());
+                logger.info("Update Status of OTP[Expired] : " + updateStatus);
+
+                updateStatus = userDetailsRepository.updateUserDetailsSetActiveForUserid(otps.get(0).getUserid(), "Y");
+                logger.info("Update Status od UserDetails[Active] : " + updateStatus);
+
+                updateStatus = userDetailsRepository.updateUserDetailsSetStatusForUserid(otps.get(0).getUserid(), Constants.OTP_VALIDATION_COMPLETED.name());
+                logger.info("Update Status od UserDetails[Status] : " + updateStatus);
+
                 return ResponseUtility.createSuccessfulResponse(Messages.SUCCESS.getMessage(), null, HttpStatus.OK);
+            }
+            else{
+                return ResponseUtility.createFailureResponse(Messages.INVALID_OTP.getMessage(), new ArrayList<String>(){{
+                    add(Messages.INVALID_OTP.getMessage());
+                }}, HttpStatus.OK);
             }
         }
         else{
-            return ResponseUtility.createFailureResponse("Invalid OTP", new ArrayList<String>(){{
-                add("Invalid OTP");
+            return ResponseUtility.createFailureResponse(Messages.INVALID_OTP.getMessage(), new ArrayList<String>(){{
+                add(Messages.INVALID_OTP.getMessage());
             }}, HttpStatus.OK);
         }
-        return null;
     }
 
 
@@ -148,9 +164,9 @@ public class SignUpController {
      * Function to generate OTP
      * @return
      */
-    private int generateOTP(){
+    private long generateOTP(){
         Random random = new Random();
-        int n = 100000 + (int)(random.nextFloat() * 100000);
+        long n = 100000 + (long)(random.nextFloat() * 100000);
         logger.info("OTP Generated : " + n);
         return n;
     }

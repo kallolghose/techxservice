@@ -3,6 +3,7 @@ package com.techx.dbhandler.models.userservice;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -40,4 +41,11 @@ public class UserDetails {
 
     @Column(name = "status")
     private String status;
+
+
+    @JoinTable(name = "userroles",
+            joinColumns = @JoinColumn(name = "userid"),
+            inverseJoinColumns = @JoinColumn(name = "roleid"))
+    private Set<Roles> roles;
+
 }

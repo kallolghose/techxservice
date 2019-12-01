@@ -24,6 +24,7 @@
         <module>pojo</module>
         <module>dbhandler</module>
         <module>utilities</module>
+        <module>auth-service</module>
     </modules>
 
 
