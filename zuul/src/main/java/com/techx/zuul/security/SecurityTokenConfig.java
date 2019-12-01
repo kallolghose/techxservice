@@ -23,12 +23,14 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .exceptionHandling().authenticationEntryPoint((req, res, e) -> res.sendError(HttpServletResponse.SC_UNAUTHORIZED))
+                .exceptionHandling().authenticationEntryPoint(new JwtAuthenticationEntryPoint())
                 .and()
                 .addFilterAfter(new JwtTokenAuthenticationFilter(jwtConfig), UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, jwtConfig.getUri()).permitAll()
-                .antMatchers("/checkAuthorization").hasRole("ADMIN")
+                .antMatchers("/ping").permitAll()
+                .antMatchers("/login/**").permitAll()
+                .antMatchers("/signup/**").permitAll()
                 .anyRequest().authenticated();
 
     }

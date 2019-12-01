@@ -17,9 +17,9 @@ public class Roles {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "role_id")
+    @Column(name = "roleid")
     private String roleId;
 
-    @Column(name = "role_value")
+    @Column(name = "rolevalue")
     private String role;
 }

@@ -45,7 +45,7 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
 
             // 2. Create auth object (contains credentials) which will be used by auth manager
             UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
-                    loginRequest.getPhoneNo(), loginRequest.getPassword(), Collections.emptyList());
+                    loginRequest.getPhoneNo(), "12345", Collections.emptyList());
 
             // 3. Authentication manager authenticate the user, and use UserDetialsServiceImpl::loadUserByUsername() method to load the user.
             return authenticationManager.authenticate(authToken);
