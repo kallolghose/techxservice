@@ -27,10 +27,10 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .addFilterAfter(new JwtTokenAuthenticationFilter(jwtConfig), UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, jwtConfig.getUri()).permitAll()
-                .antMatchers("/ping").permitAll()
-                .antMatchers("/login/**").permitAll()
-                .antMatchers("/signup/**").permitAll()
+                .antMatchers( jwtConfig.getUri()).permitAll()
+                .antMatchers("/users/ping/**").permitAll()
+                .antMatchers("/users/login/**").permitAll()
+                .antMatchers("/users/signup/**").permitAll()
                 .anyRequest().authenticated();
 
     }

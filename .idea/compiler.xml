@@ -7,14 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zuul" />
-        <module name="utilities" />
-        <module name="inventory-service" />
-        <module name="pojo" />
+        <module name="auth-service" />
         <module name="dbhandler" />
         <module name="eureka-server" />
+        <module name="inventory-service" />
+        <module name="pojo" />
         <module name="user-service" />
-        <module name="auth-service" />
+        <module name="utilities" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

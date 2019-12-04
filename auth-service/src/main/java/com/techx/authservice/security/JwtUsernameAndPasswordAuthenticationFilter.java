@@ -2,6 +2,7 @@ package com.techx.authservice.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.techx.pojo.request.user.login.LoginRequest;
+import com.techx.pojo.response.token.TokenResponse;
 import com.techx.utilities.security.JwtConfig;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -18,6 +19,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Collections;
 import java.util.Date;
 import java.util.stream.Collectors;
@@ -69,6 +71,18 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
                 .compact();
 
         response.addHeader(jwtConfig.getHeader(), jwtConfig.getPrefix() + token);
+        TokenResponse tokenResponse = new TokenResponse();
+        tokenResponse.setAuthentication("BEARER");
+        tokenResponse.setToken(token);
+        tokenResponse.setStatus(true);
+        String jsonStr = new ObjectMapper().writeValueAsString(tokenResponse);
+
+        PrintWriter out = response.getWriter();
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        out.print(jsonStr);
+        out.flush();
+
 
     }
 }
