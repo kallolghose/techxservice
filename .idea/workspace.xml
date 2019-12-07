@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3adc1cd-3fab-4ddc-a22b-459561745a1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/auth-service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/SecurityCredentialsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/SecurityCredentialsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/utilities.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/RelayTokenFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/SecurityTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/SecurityTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/InventoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/InventoryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/PingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/target/classes/com/techx/zuul/security/RelayTokenFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/target/classes/com/techx/zuul/security/SecurityTokenConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/target/classes/com/techx/zuul/security/SecurityTokenConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,39 +27,40 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="11417374">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="34" />
-          <entry key="Properties" value="13" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="431" />
-          <entry key="Properties" value="182" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.java">
+        <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+            <state relative-caret-position="270">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inventory-service/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/PingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/inventory/ChargerInventoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="80" column="42" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,10 +69,69 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/token/TokenResponse.java">
+        <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/ResponseUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="120">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/inventory/charger/ChargerResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/inventory/price/ChargerPrice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/InventoryApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/login/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-137">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,6 +145,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -117,22 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/SignUpController.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/login/Login.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/request/user/login/Login.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/request/user/login/LoginRequest.java" />
-        <option value="$PROJECT_DIR$/dbhandler/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/GenericResponse.java" />
-        <option value="$PROJECT_DIR$/user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/APIResponse.java" />
-        <option value="$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/ResponseUtility.java" />
-        <option value="$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/Messages.java" />
-        <option value="$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/constants/Status.java" />
-        <option value="$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/AppUtilities.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/signup/SignUpResponse.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/request/user/signup/SignUpRequest.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/login/LoginResponse.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/otp/OtpResponse.java" />
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/UserApplication.java" />
@@ -165,9 +198,25 @@
         <option value="$PROJECT_DIR$/user-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/SecurityCredentialsConfig.java" />
         <option value="$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/SecurityTokenConfig.java" />
-        <option value="$PROJECT_DIR$/zuul/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/token/TokenResponse.java" />
         <option value="$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerPricingDetails.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerDetails.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerStationMapping.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargingStationDetails.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/RolesRepository.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargerDetailsRepository.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargerPricingRepository.java" />
+        <option value="$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargingStationDetailsRepository.java" />
+        <option value="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/InventoryController.java" />
+        <option value="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/PingController.java" />
+        <option value="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/inventory/InventoryController.java" />
+        <option value="$PROJECT_DIR$/inventory-service/pom.xml" />
+        <option value="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/InventoryApplication.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/inventory/charger/ChargerResponse.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/inventory/price/ChargerPrice.java" />
+        <option value="$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/inventory/ChargerInventoryController.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -195,139 +244,201 @@
         <subPane>
           <expand>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="inventoryservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="userservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="inventoryservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="userservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="authservice" type="462c0819:PsiDirectoryNode" />
+              <item name="inventoryservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="authservice" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="inventoryservice" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inventoryservice" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eurekaserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -335,8 +446,8 @@
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -345,8 +456,8 @@
               <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -355,8 +466,43 @@
               <item name="response" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+              <item name="charger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+              <item name="price" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -366,46 +512,34 @@
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -413,8 +547,8 @@
               <item name="userservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -423,8 +557,8 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -434,19 +568,8 @@
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userservice" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -455,96 +578,26 @@
               <item name="UserApplication.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="zuul" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techxservice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="techxservice" type="462c0819:PsiDirectoryNode" />
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -554,8 +607,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -674,9 +727,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="816" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19463088" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -706,9 +760,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -773,150 +824,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/APIResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/AppUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/signup/SignUpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/request/user/signup/SignUpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/ResponseUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/login/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/user/otp/OtpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/request/user/otp/OtpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
-    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/OTPRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/constants/Messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/JwtConfig.java" />
-    <entry file="file://$PROJECT_DIR$/user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/security/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/Otp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/UserDetailsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/security/JwtConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,13 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/Roles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -971,7 +875,7 @@
     <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/RelayTokenFilter.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
+        <state relative-caret-position="480">
           <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
         </state>
       </provider>
@@ -985,22 +889,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="90">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/JwtAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1048,36 +952,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="36" column="91" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/SecurityCredentialsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1089,16 +969,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/PingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/JwtTokenAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="285">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1108,8 +981,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/techx/zuul/security/SecurityTokenConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="75">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,13 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1142,11 +1008,243 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-service/src/main/java/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+        <state relative-caret-position="435">
+          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/Otp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/UserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerStationMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/OTPRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerPricingDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/RolesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargingStationDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargerDetailsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/UserDetailsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="109" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargerPricingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargingStationDetailsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/PingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/PingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/UserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="76" />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/InventoryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/inventory/charger/ChargerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/techx/pojo/response/inventory/price/ChargerPrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/ResponseUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory-service/src/main/java/com/techx/inventoryservice/controller/inventory/ChargerInventoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="80" column="42" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
         </state>
       </provider>
     </entry>
