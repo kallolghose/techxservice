@@ -5,11 +5,50 @@
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dbhandler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/META-INF/dbhandler.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargerDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargerPricingDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargerStationMapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargingStationDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/Otp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/Roles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/UserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/UserRoles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/inventoryservice/ChargerDetailsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/inventoryservice/ChargerPricingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/inventoryservice/ChargingStationDetailsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/userservice/OTPRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/userservice/RolesRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/userservice/UserDetailsRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/META-INF/pojo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/request/inventory/charger/ChargerRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/request/inventory/price/PriceRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/request/user/login/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/request/user/otp/OtpRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/request/user/signup/SignUpRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/APIResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/inventory/charger/ChargerResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/inventory/price/ChargerPriceResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/token/TokenResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/user/login/LoginResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/user/otp/OtpResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/techx/pojo/response/user/signup/SignUpResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/RestTemplateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/UserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/PingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/login/LoginController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/login/LoginController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/login/LoginController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/login/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/signup/SignUpController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/signup/SignUpController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/signup/SignUpController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/signup/SignUpController$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/techx/userservice/controller/signup/SignUpController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
     </list>
@@ -37,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="1335">
+              <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -46,13 +85,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="644">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utilities/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -64,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="644">
+              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -82,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inventory-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="644">
+              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -91,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="420">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -106,11 +145,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="644">
+              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/signup/SignUpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2446">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -187,13 +235,13 @@
         <option value="$PROJECT_DIR$/utilities/src/main/java/com/techx/utilities/exceptionhandlers/CustomResponseEntityExceptionHandler.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/utilities/pom.xml" />
         <option value="$PROJECT_DIR$/user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/pojo/pom.xml" />
         <option value="$PROJECT_DIR$/inventory-service/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/dbhandler/pom.xml" />
         <option value="$PROJECT_DIR$/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/dbhandler/pom.xml" />
+        <option value="$PROJECT_DIR$/pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/utilities/pom.xml" />
       </list>
     </option>
   </component>
@@ -228,6 +276,11 @@
               <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="techxservices" type="462c0819:PsiDirectoryNode" />
               <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="techxservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="techxservices" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -467,16 +520,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/RolesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/UserDetailsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -845,28 +888,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="644">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/techx/userservice/controller/signup/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2446">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbhandler/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
@@ -880,28 +951,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inventory-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbhandler/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/utilities/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
