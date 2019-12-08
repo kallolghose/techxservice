@@ -3,6 +3,8 @@ package com.techx.dbhandler.models.inventoryservice;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
@@ -10,22 +12,23 @@ import javax.persistence.*;
 @Entity(name = "chargerpricingdetails")
 @Getter
 @Setter
-public class ChargerPricingDetails {
+@Transactional
+public class ChargerPricingDetails implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "pricingudid")
-    private String pricingUdid;
-
     @Column(name = "chargerudid")
     private String chargerUdid;
 
+    @Column(name = "pricingudid")
+    private String pricingUdid;
+
     @Column(name = "rateperhr")
-    private String ratePerHr;
+    private Float ratePerHr;
 
     @Column(name = "ratepermin")
-    private String ratePerMin;
+    private Float ratePerMin;
 }

@@ -1,5 +1,6 @@
 package com.techx.pojo.response.user.otp;
 
+import com.techx.pojo.response.token.TokenResponse;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +12,6 @@ public class OtpResponse {
     private Long phoneNo;
     private String isdCode;
     private String message;
-    private String token;
+    private TokenResponse token;
 
 }

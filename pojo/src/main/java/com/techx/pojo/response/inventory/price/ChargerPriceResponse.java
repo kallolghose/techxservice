@@ -4,12 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class ChargerPrice {
+public class ChargerPriceResponse {
 
     private Long id;
     private String pricingUdid;
     private String chargerUdid;
-    private String ratePerHour;
-    private String ratePerMinute;
+    private Float ratePerHour;
+    private Float ratePerMinute;
 
 }

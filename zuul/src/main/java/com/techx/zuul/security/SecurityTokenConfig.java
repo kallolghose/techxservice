@@ -31,6 +31,8 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/users/ping/**").permitAll()
                 .antMatchers("/users/login/**").permitAll()
                 .antMatchers("/users/signup/**").permitAll()
+                .antMatchers("/inventory/ping/**").permitAll()
+                .antMatchers("/inventory/charger/**").permitAll()
                 .anyRequest().authenticated();
 
     }

@@ -3,6 +3,7 @@ package com.techx.dbhandler.models.inventoryservice;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Entity(name = "chargerdetails")
 @Getter
 @Setter
-public class ChargerDetails {
+public class ChargerDetails implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,8 +30,19 @@ public class ChargerDetails {
     @Column(name = "chargername")
     private String chargerName;
 
-    @JoinTable
-    @OneToOne
-    ChargerPricingDetails chargerPricingDetails;
+    @Column(name = "latitude")
+    private Double latitude;
+
+    @Column(name = "longitude")
+    private Double longitude;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(
+            name = "chargerudid",
+            referencedColumnName = "chargerudid",
+            insertable = false,
+            updatable = false
+    )
+    private ChargerPricingDetails chargerPricingDetails;
 
 }

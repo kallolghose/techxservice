@@ -1,9 +1,13 @@
 package com.techx.userservice.controller.login;
 
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.EurekaClient;
+import com.netflix.discovery.shared.Application;
 import com.techx.dbhandler.models.userservice.UserDetails;
 import com.techx.dbhandler.repository.userservice.UserDetailsRepository;
 import com.techx.pojo.request.user.login.LoginRequest;
 import com.techx.pojo.response.APIResponse;
+import com.techx.pojo.response.token.TokenResponse;
 import com.techx.pojo.response.user.login.LoginResponse;
 import com.techx.utilities.AppUtilities;
 import com.techx.utilities.ResponseUtility;
@@ -12,9 +16,11 @@ import com.techx.utilities.constants.Messages;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
@@ -25,6 +31,14 @@ import java.util.Objects;
 public class LoginController {
 
     private Logger logger = LoggerFactory.getLogger(LoginController.class);
+
+    private String authServiceId = "auth-service";
+
+    @Autowired
+    private EurekaClient eurekaClient;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @Autowired
     private UserDetailsRepository userDetailsRepository;
@@ -50,8 +64,15 @@ public class LoginController {
                     loginResponse.setEmailId(userDetails.getEmailId());
                     loginResponse.setPhoneNo(Long.parseLong(userDetails.getPhoneNumber()));
                     loginResponse.setIsdCode(userDetails.getIsdCode());
-                    loginResponse.setToken("Any Token");
+                    loginResponse.setToken(new TokenResponse());
                     loginResponse.setUserid(userDetails.getUserId());
+
+                    Application application = eurekaClient.getApplication(authServiceId);
+                    InstanceInfo instanceInfo = application.getInstances().get(0);
+                    logger.info("http://" + instanceInfo.getIPAddr() + ":" + instanceInfo.getPort() + "/auth");
+                    TokenResponse tokenResponse = restTemplate.postForObject("http://auth-service/auth", loginRequest, TokenResponse.class);
+                    loginResponse.setToken(tokenResponse);
+
                     return ResponseUtility.createSuccessfulResponse(Messages.SUCCESS.getMessage(), loginResponse, HttpStatus.OK);
                 } else {
                     return ResponseUtility.createFailureResponse(Messages.AUTHENTICATION_FAILURE.getMessage(), new ArrayList<String>() {{

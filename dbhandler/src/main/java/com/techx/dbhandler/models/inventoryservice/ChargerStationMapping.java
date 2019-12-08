@@ -4,6 +4,8 @@ package com.techx.dbhandler.models.inventoryservice;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
@@ -11,7 +13,8 @@ import javax.persistence.*;
 @Entity(name = "chargingstation_chargermapping")
 @Getter
 @Setter
-public class ChargerStationMapping {
+@Transactional
+public class ChargerStationMapping implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -6,11 +6,18 @@ import org.slf4j.LoggerFactory;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.UUID;
 
 public class AppUtilities {
 
     private static Logger logger = LoggerFactory.getLogger(AppUtilities.class);
 
+    /**
+     * Function to get the secure phrase using a generated salt
+     * @param phrase
+     * @param salt
+     * @return
+     */
     public static String getSecurePhrase(String phrase, byte[] salt)
     {
         String generatedPassword = null;
@@ -31,6 +38,10 @@ public class AppUtilities {
         return generatedPassword;
     }
 
+    /**
+     * Function to generate a salt.
+     * @return
+     */
     public static byte[] getSalt(){
         try {
             SecureRandom sr = SecureRandom.getInstance("SHA1PRNG", "SUN");
@@ -42,6 +53,14 @@ public class AppUtilities {
             logger.error("Exception : " + e.getMessage(), e);
         }
         return null;
+    }
+
+    /**
+     * Function to generate a random UDID
+     * @return
+     */
+    public static String generateUDID(){
+        return UUID.randomUUID().toString();
     }
 
 }

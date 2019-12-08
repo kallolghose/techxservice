@@ -3,14 +3,18 @@ package com.techx.dbhandler.models.inventoryservice;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
+import java.io.Serializable;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "chargerdetails")
+@Entity(name = "chargingstationdetails")
 @Getter
 @Setter
-public class ChargingStationDetails {
+@Transactional
+public class ChargingStationDetails implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,6 +45,12 @@ public class ChargingStationDetails {
     @Column(name = "pincode")
     private Long pincode;
 
-
+    @OneToMany
+    @JoinTable(
+            name = "chargingstation_chargermapping",
+            joinColumns = {@JoinColumn(name = "stationudid")},
+            inverseJoinColumns = {@JoinColumn(name = "chargerudid", insertable = false, updatable = false)}
+    )
+    private List<ChargerDetails> chargerDetailsList;
 
 }
