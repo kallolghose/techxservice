@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3adc1cd-3fab-4ddc-a22b-459561745a1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-0.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-0.0.1.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/AuthApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/JwtUsernameAndPasswordAuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/SecurityCredentialsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/techx/authservice/security/UserDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargerDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargerPricingDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargerStationMapping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/inventoryservice/ChargingStationDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/Otp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/UserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/models/userservice/UserRoles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/inventoryservice/ChargerDetailsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/inventoryservice/ChargerPricingRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/inventoryservice/ChargingStationDetailsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/userservice/OTPRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/userservice/RolesRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/classes/com/techx/dbhandler/repository/userservice/UserDetailsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/dbhandler-0.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbhandler/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/techx/eurekaserver/SpringEurekaServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/InventoryApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/PingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/inventory/ChargerInventoryController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/inventory/ChargerInventoryController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/inventory/ChargerInventoryController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/inventory/ChargerInventoryController$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/inventory/ChargerInventoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/pricing/PricingInventoryController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/pricing/PricingInventoryController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/techx/inventoryservice/controller/pricing/PricingInventoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/inventory-service-0.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/inventory-service-0.0.1.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-    </list>
+    <list default="true" id="a3adc1cd-3fab-4ddc-a22b-459561745a1b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
@@ -637,8 +576,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
