@@ -1,0 +1,12 @@
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/APIResponse.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/request/inventory/charger/ChargerRequest.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/request/user/signup/SignUpRequest.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/user/login/LoginResponse.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/request/user/login/LoginRequest.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/user/otp/OtpResponse.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/request/user/otp/OtpRequest.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/inventory/price/ChargerPriceResponse.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/user/signup/SignUpResponse.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/request/inventory/price/PriceRequest.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/inventory/charger/ChargerResponse.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/pojo/src/main/java/com/techx/pojo/response/token/TokenResponse.java

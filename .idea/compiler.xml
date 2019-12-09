@@ -8,10 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
-        <module name="eureka-server" />
+        <module name="utilities" />
         <module name="inventory-service" />
         <module name="pojo" />
         <module name="dbhandler" />
+        <module name="eureka-server" />
         <module name="user-service" />
         <module name="auth-service" />
       </profile>

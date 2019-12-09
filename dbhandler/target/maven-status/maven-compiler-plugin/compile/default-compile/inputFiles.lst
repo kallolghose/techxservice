@@ -1,0 +1,14 @@
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/Roles.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargingStationDetailsRepository.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargerDetailsRepository.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/UserDetails.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerDetails.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/UserRoles.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerPricingDetails.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/userservice/Otp.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargingStationDetails.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/models/inventoryservice/ChargerStationMapping.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/RolesRepository.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/UserDetailsRepository.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/repository/inventoryservice/ChargerPricingRepository.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/dbhandler/src/main/java/com/techx/dbhandler/repository/userservice/OTPRepository.java
