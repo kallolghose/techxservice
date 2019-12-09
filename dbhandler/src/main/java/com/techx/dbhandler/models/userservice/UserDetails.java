@@ -3,6 +3,7 @@ package com.techx.dbhandler.models.userservice;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -13,7 +14,7 @@ import javax.persistence.*;
 public class UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -29,18 +30,23 @@ public class UserDetails {
     @Column(name = "emailid")
     private String emailId;
 
-    @Column(name = "age")
-    private Integer age;
-
-    @Column(name = "gender")
-    private String gender;
-
     @Column(name = "password")
     private String password;
+
+    @Column(name = "salt")
+    private byte[] salt;
 
     @Column(name = "active")
     private String active;
 
     @Column(name = "status")
     private String status;
+
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "userroles",
+            joinColumns = @JoinColumn(name = "userid"),
+            inverseJoinColumns = @JoinColumn(name = "roleid"))
+    private Set<Roles> roles;
+
 }

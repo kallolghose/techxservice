@@ -9,6 +9,6 @@ public class OtpRequest {
     private String emailId;
     private String isdCode;
     private Long phoneNo;
-    private Integer otp;
+    private Long otp;
 
 }

@@ -9,11 +9,8 @@ import java.util.Date;
 public class SignUpRequest {
 
     private String emailId;
-    private String phoneNo;
+    private Long phoneNo;
     private String isdCode;
-    private Date dateOfBirth;
-    private Integer age;
-    private String gender;
     private String password;
 
 }

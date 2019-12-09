@@ -8,15 +8,15 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "userdetails")
+@Entity(name = "otp")
 @Getter
 @Setter
 public class Otp {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "creationdate")
     private Date creationDate;
@@ -28,5 +28,12 @@ public class Otp {
     private String phoneNumber;
 
     @Column(name = "otp")
-    private String otp;
+    private Long otp;
+
+    @Column(name = "userid")
+    private String userid;
+
+    @Column(name = "expired")
+    private String expired;
+
 }

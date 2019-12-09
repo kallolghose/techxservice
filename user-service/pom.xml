@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>user-service</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -20,7 +21,30 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.techx</groupId>
+            <artifactId>pojo</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.techx</groupId>
+            <artifactId>dbhandler</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.techx</groupId>
+            <artifactId>utilities</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

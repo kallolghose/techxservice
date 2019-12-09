@@ -23,6 +23,8 @@
         <module>inventory-service</module>
         <module>pojo</module>
         <module>dbhandler</module>
+        <module>utilities</module>
+        <module>auth-service</module>
     </modules>
 
 
@@ -86,15 +88,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
     <repositories>
         <repository>
