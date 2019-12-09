@@ -1,0 +1,4 @@
+com/techx/zuul/security/SecurityTokenConfig.class
+com/techx/zuul/security/JwtTokenAuthenticationFilter.class
+com/techx/zuul/security/JwtAuthenticationEntryPoint.class
+com/techx/zuul/ZuulApplication.class

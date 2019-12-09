@@ -11,6 +11,7 @@ import com.techx.utilities.AppUtilities;
 import com.techx.utilities.ResponseUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,7 @@ import javax.websocket.server.PathParam;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/charger")
@@ -69,7 +71,9 @@ public class ChargerInventoryController {
 
     @GetMapping("/findbyid/{id}")
     public ResponseEntity<APIResponse> getChargerById(@PathVariable("id") Long id){
-        ChargerDetails chargerDetails = chargerDetailsRepository.findById(id).get();
+
+        Optional<ChargerDetails> chargerDetailsOptional = chargerDetailsRepository.findById(id);
+        ChargerDetails chargerDetails = chargerDetailsOptional.isPresent() ? chargerDetailsOptional.get() : null;
 
         if(Objects.nonNull(chargerDetails)) {
             ChargerResponse chargerResponse = new ChargerResponse();
@@ -196,4 +200,55 @@ public class ChargerInventoryController {
             }}, HttpStatus.BAD_REQUEST);
         }
     }
+
+    @DeleteMapping("/removebyudid/{udid}")
+    public ResponseEntity<APIResponse> removeUsingUDID(@PathVariable(name = "udid")String udid){
+        ChargerDetails chargerDetails = chargerDetailsRepository.findByChargerUdid(udid);
+        if(Objects.nonNull(chargerDetails)){
+            chargerDetailsRepository.delete(chargerDetails);
+            return ResponseUtility.createSuccessfulResponse("Charger with UDID : " + udid + " deleted", "Successful Deletion", HttpStatus.OK);
+        }
+        else{
+            return ResponseUtility.createFailureResponse("Charger NOT Found", new ArrayList<String>(){{
+                add("Charger with UDID : " + udid + " Not Found");
+            }}, HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @DeleteMapping("/removebyid/{id}")
+    public ResponseEntity<APIResponse> removeUsingID(@PathVariable(name = "id")Long id){
+        Optional<ChargerDetails> chargerDetailsOptional = chargerDetailsRepository.findById(id);
+        ChargerDetails chargerDetails = chargerDetailsOptional.isPresent() ? chargerDetailsOptional.get() : null;
+        if(Objects.nonNull(chargerDetails)){
+            chargerDetailsRepository.deleteById(id);
+            return ResponseUtility.createSuccessfulResponse("Charger with ID : " + id + " deleted", "Successful Deletion", HttpStatus.OK);
+        }
+        else{
+            return ResponseUtility.createFailureResponse("Charger NOT Found", new ArrayList<String>(){{
+                add("Charger with ID : " + id + " Not Found");
+            }}, HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PutMapping("/update/{udid}")
+    public ResponseEntity<APIResponse> updateCharger(@PathVariable(name = "udid") String udid, @RequestBody ChargerRequest chargerRequest){
+        ChargerDetails chargerDetails = chargerDetailsRepository.findByChargerUdid(udid);
+        if(Objects.nonNull(chargerDetails)){
+
+            ChargerDetails updateData = new ChargerDetails();
+            BeanUtils.copyProperties(chargerRequest, updateData);
+            updateData.setChargerUdid(chargerDetails.getChargerUdid());
+            updateData.setId(chargerDetails.getId());
+
+            ChargerDetails updatedChargerDetails = chargerDetailsRepository.save(updateData);
+            return ResponseUtility.createSuccessfulResponse("Charger details updated for UDID : "+ udid + " updated", updatedChargerDetails,
+                    HttpStatus.OK);
+        }
+        else{
+            return ResponseUtility.createFailureResponse("Chager NOT Found", new ArrayList<String>(){{
+                add("Charger with UDID : " + udid + " Not Found");
+            }}, HttpStatus.NOT_FOUND);
+        }
+    }
+
 }

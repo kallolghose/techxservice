@@ -1,0 +1,4 @@
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/zuul/src/main/java/com/techx/zuul/ZuulApplication.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/zuul/src/main/java/com/techx/zuul/security/SecurityTokenConfig.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/zuul/src/main/java/com/techx/zuul/security/JwtTokenAuthenticationFilter.java
+/Users/kallolghosh/Documents/myWorkspace/techx/services/techxservices/zuul/src/main/java/com/techx/zuul/security/JwtAuthenticationEntryPoint.java
