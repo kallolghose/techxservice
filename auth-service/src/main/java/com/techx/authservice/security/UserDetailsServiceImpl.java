@@ -34,7 +34,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                     .map(role -> new SimpleGrantedAuthority("ROLE_" + role.getRole()))
                     .collect(Collectors.toList());
 
-            return new User(userFromDB.getPhoneNumber(), encoder.encode("12345"), grantedAuthorities);
+            return new User(userFromDB.getPhoneNumber(), userFromDB.getPassword(), grantedAuthorities);
         }
 
         throw new UsernameNotFoundException("Username: " + phoneNumber + " not found");

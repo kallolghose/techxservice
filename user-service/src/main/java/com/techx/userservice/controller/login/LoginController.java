@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -33,6 +34,9 @@ public class LoginController {
     private Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     private String authServiceId = "auth-service";
+
+    @Autowired
+    private BCryptPasswordEncoder encoder;
 
     @Autowired
     private EurekaClient eurekaClient;
@@ -56,8 +60,10 @@ public class LoginController {
         if(Objects.nonNull(userDetails)){
             if(!userDetails.getActive().equals("N")) {
                 byte[] salt = userDetails.getSalt();
-                String generateSecurePassword = AppUtilities.getSecurePhrase(loginRequest.getPassword(), salt);
-                if (generateSecurePassword.equals(userDetails.getPassword())) {
+                //String generateSecurePassword = AppUtilities.getSecurePhrase(loginRequest.getPassword(), salt);
+                //String generateSecurePassword = encoder.encode(loginRequest.getPassword());
+                boolean passwordMatched = encoder.matches(loginRequest.getPassword(), userDetails.getPassword());
+                if (passwordMatched) {
                     LoginResponse loginResponse = new LoginResponse();
                     loginResponse.setFirstName("Hello");
                     loginResponse.setLastName("There");

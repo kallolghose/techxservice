@@ -2,9 +2,13 @@ package com.techx.userservice.controller.signup;
 
 import com.netflix.ribbon.proxy.annotation.Http;
 import com.techx.dbhandler.models.userservice.Otp;
+import com.techx.dbhandler.models.userservice.Roles;
 import com.techx.dbhandler.models.userservice.UserDetails;
+import com.techx.dbhandler.models.userservice.UserRoles;
 import com.techx.dbhandler.repository.userservice.OTPRepository;
+import com.techx.dbhandler.repository.userservice.RolesRepository;
 import com.techx.dbhandler.repository.userservice.UserDetailsRepository;
+import com.techx.dbhandler.repository.userservice.UserRolesRepository;
 import com.techx.pojo.request.user.otp.OtpRequest;
 import com.techx.pojo.request.user.signup.SignUpRequest;
 import com.techx.pojo.response.APIResponse;
@@ -19,6 +23,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,14 +40,27 @@ public class SignUpController {
     private Logger logger = LoggerFactory.getLogger(SignUpController.class);
 
     @Autowired
+    private BCryptPasswordEncoder encoder;
+
+    @Autowired
     private UserDetailsRepository userDetailsRepository;
 
     @Autowired
     private OTPRepository otpRepository;
 
-    public SignUpController(UserDetailsRepository userDetailsRepository, OTPRepository otpRepository){
+    @Autowired
+    private UserRolesRepository userRolesRepository;
+
+    @Autowired
+    private RolesRepository rolesRepository;
+
+
+    public SignUpController(UserDetailsRepository userDetailsRepository, OTPRepository otpRepository,
+                            UserRolesRepository userRolesRepository, RolesRepository rolesRepository){
         this.userDetailsRepository = userDetailsRepository;
         this.otpRepository = otpRepository;
+        this.userRolesRepository = userRolesRepository;
+        this.rolesRepository = rolesRepository;
     }
 
 
@@ -68,9 +86,14 @@ public class SignUpController {
                 byte[] salt = AppUtilities.getSalt();
                 String securedPassword = AppUtilities.getSecurePhrase(signUpRequest.getPassword(), salt);
 
-                userDetails.setPassword(securedPassword);
+                userDetails.setPassword(encoder.encode(signUpRequest.getPassword()));
                 userDetails.setSalt(salt);
                 userDetailsRepository.save(userDetails);
+
+                UserRoles userRoles = new UserRoles();
+                userRoles.setUserId(userID);
+                userRoles.setRoleId(rolesRepository.findByRole("USER").getRoleId());
+                userRolesRepository.save(userRoles);
 
                 OtpRequest otpRequest = new OtpRequest();
                 otpRequest.setEmailId(signUpRequest.getEmailId());
